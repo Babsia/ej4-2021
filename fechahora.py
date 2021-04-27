@@ -7,12 +7,13 @@ class FechaHora:
     __seg=0
 
     def __init__(self,dia=1,mes=1,anio=2020,h=0,m=0,s=0):
-        self.__dia=dia
-        self.__mes=mes
-        self.__anio=anio
-        self.__hora=h
-        self.__minutos=m
-        self.__seg=s
+        if type(dia)==int and type(mes)==int and type(anio)==int and type(h)==int and type(m)==int and type(s)==int:
+            self.__dia=dia
+            self.__mes=mes
+            self.__anio=anio
+            self.__hora=h
+            self.__minutos=m
+            self.__seg=s
     
     
     def PonerEnHora(self,Hora,min=0,seg=0):
